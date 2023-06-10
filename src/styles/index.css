@@ -201,6 +201,8 @@
             width: 100%;
             height: 200px;
 
+            font-size: 9.375rem;
+
             color: var(--color-grey-1);
             
            
@@ -212,6 +214,7 @@
         align-items: center;
         justify-content: center;
     }
+
     
     @media (min-width: 700px) {
         #filters-nav{
@@ -231,3 +234,9 @@
 
    
 }
+
+    @media (max-width: 468px){
+        #filters-value-add{
+            width: 100%;
+        }
+    }

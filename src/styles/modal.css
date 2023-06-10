@@ -8,6 +8,11 @@
     }
 }
 
+    .filters__value-line > p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
   
      ::backdrop{
         background-color: rgba(0, 0, 0,0.6);
@@ -219,5 +224,14 @@
 
     .modal__btn--value {
         width: 7rem;
+    }
+
+  
+}
+
+@media (max-width: 490px){
+    #modal-value {
+        width: 20rem;
+    
     }
 }
