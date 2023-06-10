@@ -39,20 +39,131 @@
 
   --font-family-1: "Inter", sans-serif;
   --font-family-2: "Nunito", sans-serif;
+
+  --bt-input-size: 2rem;
+  --bt-input-padding: 0.875rem;
 }
 
 body {
   font-family: var(--font-family-1);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 43rem;
+
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .container {
-    max-width: 43rem;
+
     margin: 0 1rem;
   }
 }
+
+header{
+  width: 100%;
+
+}
+#menu{
+  background-color: var(--color-grey-5);
+  
+  height: 8.25rem;
+
+  width: 100%;
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#menu-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+    
+}
+
+#menu-logo {
+
+  display: flex;
+  align-items: center;
+}
+
+#menu > div > span > h1 {
+  font-style: normal;
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-1);
+  
+}
+
+#menu-name {
+  color: var(--color-brand-1);
+
+}
+
+#menu-btn{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#menu-btn > button {
+cursor: pointer;
+}
+
+#menu > div > span > button {
+  background-color: var(--color-brand-1);
+  color: var(--color-mode);
+  border: 1px solid transparent;
+  border-radius: var(--radius-1);
+
+  font-style: normal;
+  font-weight: var(--font-weight-1);
+  font-size: var(----font-size-3);
+  line-height: var(----font-line-height-1);
+
+  padding: 0.5rem 0.875rem;
+
+  width: 90vw;
+}
+
+#menu > div > span > button:hover{
+  background-color: var(--color-brand-2);
+}
+
+@media (min-width: 700px) {
+
+  #menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  #menu-logo{
+
+    left: 0px;
+  }
+
+  #menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 4rem;
+    width: 100%;
+
+    
+  }
+
+  #menu-btn{
+    width: 200px;
+  }
+
+}
+
+
