@@ -216,7 +216,7 @@
         justify-content: center;
     }
  
-    
+   
     @media (max-width: 768px) { /*tablets maiores e desktops pequenos*/
         #filters-nav{
         display: flex;
@@ -236,9 +236,7 @@
             width: 35rem;
         }
 
-
-   
-}
+       
 
     @media (max-width: 480px){ /* telefone maiores e tablets pequenos*/
         #filters-nav{
@@ -269,6 +267,10 @@
         }
     }
 
+    
+
+    }
+
     @media (max-width: 375px){
         #filters-value-add {
         width: 21rem;
@@ -277,11 +279,11 @@
         .modal__value {
             width: 17.2rem;
         }
-
+    
         .none{
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-
+    
     }
