@@ -269,3 +269,9 @@ width: 6.25rem;
         max-width: 56.125rem;
     }
 }
+
+@media (max-width: 380px){
+    #filters-value-add {
+        max-width: 21.125rem;
+    }
+}
