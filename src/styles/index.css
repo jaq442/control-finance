@@ -264,12 +264,12 @@ width: 6.25rem;
 
 @media (max-width: 1440px){
     #filters-value-add {
-        max-width: 56.1246.125rem;
+        max-width: 50.125rem;
     }
 }
 
 @media (max-width: 375px){
     #filters-value-add {
-        max-width: 21.125rem;
+        max-width: 20.125rem;
     }
 }
