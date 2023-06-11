@@ -257,7 +257,9 @@
         }
 
         .none{
-            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -265,4 +267,21 @@
         #filters-value-add {
             width: 63vw;
         }
+    }
+
+    @media (max-width: 375px){
+        #filters-value-add {
+        width: 21rem;
+        }  
+        
+        .modal__value {
+            width: 17.2rem;
+        }
+
+        .none{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
     }
