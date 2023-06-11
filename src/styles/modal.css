@@ -98,7 +98,7 @@
     .modal__value{
         margin-top: 15px;
 
-        min-width: 24rem;
+        width: 24rem;
 
         font-style: normal;
         font-weight: var(--font-weight-2);
@@ -233,11 +233,10 @@
 }
 
 @media (max-width: 480px){ /*telefones maiores*/
-    #modal-value {
-        width: 20rem;
-    
-    }
 
+    #filters-value-add {
+        width: 24rem;
+    }
     .modal__infos {
         display: flex;
         flex-direction: column;
@@ -259,8 +258,12 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     .modal__btn--value {
         width: 12rem;
     }
+
+    .modal__value {
+        width: 22.2rem;
+}
 }
