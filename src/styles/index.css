@@ -260,3 +260,9 @@
             padding: 50px;
         }
     }
+
+    @media (min-width: 1440px){
+        #filters-value-add {
+            width: 63vw;
+        }
+    }
