@@ -85,9 +85,11 @@ export const filterItems = (array) => {
                 
             }
         
+            
             deleteValue(array)
-      
-        })})
+        }
+        
+        )})
 }
 
 
@@ -100,6 +102,8 @@ export function renderValue (arrayItems) {
     arrayItems.forEach((item) => {     
        const card = createValueCard(item)     
     })
+
+    const sumButton = document.querySelectorAll('.filters__btn')
 
     deleteValue(arrayItems)
 }
@@ -163,7 +167,11 @@ function deleteValue(array) {
         })
         
         array.splice(index, 1)
+
+
+
         filterItems(array)
+        
         
         if(document.querySelector(".filters__values").getElementsByTagName("li").length === 0){ // se não tiver li quando clicar no remove button
             const none = document.querySelector(".filters__values"); //acesso ul
@@ -177,8 +185,8 @@ function deleteValue(array) {
 }
 
 
-filterItems(insertedValues)
 
+filterItems(insertedValues)
 
 
 
