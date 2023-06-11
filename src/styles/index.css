@@ -261,7 +261,7 @@
         }
     }
 
-    @media (min-width: 1440px){
+    @media (max-width: 1440px){
         #filters-value-add {
             width: 63vw;
         }
