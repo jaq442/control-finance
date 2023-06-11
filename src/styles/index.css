@@ -79,7 +79,7 @@
         position: relative;
         top: 60px;
 
-        width: 63vw;
+        width: 68vw;
 
         color: var(--grey-1);
         background-color:var(--color-grey-5);
@@ -248,12 +248,12 @@
      
             }
         #filters{
-width: 90vw;
+            width: 90vw;
 
         }
 
         #filters-value-add{
-            width: 27rem;
+            width: 24rem;
         }
 
         .none{
