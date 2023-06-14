@@ -37,10 +37,10 @@ export const filterItems = (array) => {
     createSum(array)
     
     sumButton.forEach(btn => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener("click", (event) => {
             sumValue.innerHTML = ''
             items.innerHTML = ''
-            if(btn.innerText == "Saídas"){
+            if(event.target.innerText == "Saídas"){
             const outFiltered = array.filter(item => item.categoryID == 1)
             createSum(outFiltered)
             renderValue(outFiltered)
@@ -55,7 +55,7 @@ export const filterItems = (array) => {
             
             }
                 
-            if(btn.innerText == "Entradas"){
+            if(event.target.innerText == "Entradas"){
                 const inFiltered = array.filter(item => item.categoryID == 0)
                 createSum(inFiltered)
                 renderValue(inFiltered)
@@ -70,7 +70,7 @@ export const filterItems = (array) => {
             
             }
 
-            if(btn.innerText == "Todos"){
+            if(event.target.innerText == "Todos"){
                 
                 createSum(insertedValues)
                 renderValue(insertedValues)
@@ -168,10 +168,8 @@ function deleteValue(array) {
         
         array.splice(index, 1)
 
-
-
         filterItems(array)
-        
+
         
         if(document.querySelector(".filters__values").getElementsByTagName("li").length === 0){ // se não tiver li quando clicar no remove button
             const none = document.querySelector(".filters__values"); //acesso ul
@@ -180,6 +178,7 @@ function deleteValue(array) {
             <h2>Nenhum valor cadastrado</h2>
             <p>Insira um valor</p>
             </li>`)
+            
         }})
     })
 }

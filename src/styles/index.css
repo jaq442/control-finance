@@ -231,7 +231,7 @@ width: 6.25rem;
     }
 
     #filters-value-add{
-        width: 35rem;
+        width: 565px;
     }
 
    
@@ -249,7 +249,7 @@ width: 6.25rem;
     }
 
     #filters-value-add{
-        width: 24rem;
+        width: 430px;
     }
 
     .none{
@@ -264,12 +264,12 @@ width: 6.25rem;
 
 @media (max-width: 1440px){
     #filters-value-add {
-        max-width: 56.125rem;
+        max-width: 860px;
     }
 }
 
 @media (max-width: 375px){
     #filters-value-add {
-        max-width: 20.125rem;
+        max-width: 336px;
     }
 }
